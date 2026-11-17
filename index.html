@@ -1,0 +1,578 @@
+code<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Lensbro– App Wireframes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="sb" viewBox="0 0 56 12">
+        <path
+          d="M1 10h2.4V8H1zm4.4 0h2.4V6H5.4zm4.4 0h2.4V4H9.8zm4.4 0h2.4V1.5h-2.4z"
+          fill="currentColor"
+          stroke="none"
+        />
+        <path d="M22 4.5a7 7 0 0 1 10 0M24.3 7a4 4 0 0 1 5.4 0" />
+        <circle cx="27" cy="9.3" r=".8" fill="currentColor" />
+        <rect
+          x="38"
+          y="2"
+          width="16"
+          height="8"
+          rx="2.5"
+          fill="currentColor"
+          stroke="none"
+        />
+      </symbol>
+      <symbol id="search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-4-4" />
+      </symbol>
+      <symbol id="pin" viewBox="0 0 24 24">
+        <path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" />
+        <circle cx="12" cy="10" r="2.5" fill="currentColor" />
+      </symbol>
+      <symbol id="cal" viewBox="0 0 24 24">
+        <rect x="4" y="5" width="16" height="15" rx="2" />
+        <path d="M4 10h16M8 3v4M16 3v4" />
+      </symbol>
+      <symbol id="clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 8v4l3 2" />
+      </symbol>
+      <symbol id="inbox" viewBox="0 0 24 24">
+        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
+        <path
+          d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+        />
+      </symbol>
+      <symbol id="share" viewBox="0 0 24 24">
+        <path d="M12 15V4M8 8l4-4 4 4M5 12v8h14v-8" />
+      </symbol>
+      <symbol id="back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" /></symbol>
+      <symbol id="next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></symbol>
+      <symbol id="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></symbol>
+      <symbol id="home" viewBox="0 0 24 24">
+        <path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z" />
+      </symbol>
+      <symbol id="user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+      </symbol>
+      <symbol id="star" viewBox="0 0 24 24">
+        <path
+          d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"
+        />
+      </symbol>
+      <symbol id="camera" viewBox="0 0 24 24">
+        <path d="M4 8h3l2-3h6l2 3h3v12H4z" />
+        <circle cx="12" cy="13" r="3.5" />
+      </symbol>
+      <symbol id="heart" viewBox="0 0 24 24">
+        <path
+          d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"
+        />
+      </symbol>
+      <symbol id="people" viewBox="0 0 24 24">
+        <circle cx="8" cy="9" r="3" />
+        <circle cx="17" cy="9" r="2.5" />
+        <path d="M2 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.5c3.5-.5 7 1.5 7 5.5" />
+      </symbol>
+      <symbol id="msg" viewBox="0 0 24 24">
+        <path d="M4 5h16v11H9l-5 4z" />
+      </symbol>
+    </svg>
+
+    <h1 id="t"></h1>
+    <div id="stage">
+      <div id="fit">
+        <!-- 1. HOME / DISCOVER -->
+        <section class="phone on" id="home" data-t="1. Home / Discover">
+          <div class="st">
+            <span>9:41</span><svg class="sb"><use href="#sb" /></svg>
+          </div>
+          <div class="pad r sp" style="margin-top: 22px">
+            <b style="font-size: 19px">Lensbro</b
+            ><span class="r" style="font-size: 13px; font-weight: 700"
+              ><i data-i="pin"></i>Kochi<i data-i="chev"></i
+            ></span>
+          </div>
+          <div class="pad" style="margin-top: 16px">
+            <div
+              style="font-size: 25px; font-weight: 700; letter-spacing: -0.3px"
+            >
+              Now,
+            </div>
+            <p
+              class="mu"
+              style="font-size: 15px; margin: 4px 0 0; line-height: 1.25"
+            >
+              Live in Kochi.<br />
+              simply document your life .
+            </p>
+          </div>
+          <div class="pad r" style="margin-top: 16px; gap: 7px">
+            <div class="t"><i data-i="people"></i>Friends</div>
+            <div class="t"><i data-i="heart"></i>Couple</div>
+            <div class="t"><i data-i="user"></i>Solo</div>
+            <div class="t"><i data-i="star"></i>Celebration</div>
+            <div class="t"><i data-i="camera"></i>Creator</div>
+          </div>
+          <div
+            class="r"
+            style="
+              margin: 16px 20px 0;
+              height: 38px;
+              border: 1px solid #ccc;
+              border-radius: 99px;
+              padding: 0 16px;
+              gap: 10px;
+              font-size: 12px;
+              color: #444;
+            "
+          >
+            <i data-i="search" style="font-size: 16px"></i>Select meetup
+            location....
+          </div>
+          <div class="pad r sp" style="margin: 20px 0 8px">
+            <b style="font-size: 13.5px">Featured Photographers</b
+            ><span style="font-size: 10px">See all →</span>
+          </div>
+          <div class="fr">
+            <div class="fc">
+              <div class="ph"></div>
+              <div class="fi">
+                <b style="font-size: 11px">Nawaf muneer</b
+                ><span class="mu">Candid • Natural</span>
+                <div class="r sp">
+                  <span>★ 4.8 (243)</span
+                  ><i data-i="bm" style="font-size: 13px"></i>
+                </div>
+                <span class="chip">From $399 onwards</span>
+              </div>
+            </div>
+            <div class="fc">
+              <div class="ph"></div>
+              <div class="fi">
+                <b style="font-size: 11px">Rebin s</b
+                ><span class="mu">Aesthetic • Minimal</span>
+                <div class="r sp">
+                  <span>★ 4.9 (187)</span
+                  ><i data-i="bm" style="font-size: 13px"></i>
+                </div>
+                <span class="chip">From $499 onwards</span>
+              </div>
+            </div>
+          </div>
+          <div class="f"></div>
+          <div class="nav" data-nav="0"></div>
+        </section>
+
+        <!-- 2. EXPLORE -->
+        <section class="phone" id="explore" data-t="2. Explore">
+          <div class="st">
+            <span>9:41</span><svg class="sb"><use href="#sb" /></svg>
+          </div>
+          <div class="pad r sp" style="margin-top: 20px">
+            <span class="ti" style="font-size: 19px"
+              >Photographers in Kochi</span
+            ><i data-i="search" style="font-size: 20px"></i>
+          </div>
+          <div
+            class="pad r"
+            style="flex-wrap: wrap; gap: 8px; margin-top: 14px"
+          >
+            <span class="chip">Occasion<i data-i="chev"></i></span
+            ><span class="chip">Price<i data-i="chev"></i></span
+            ><span class="chip">Style<i data-i="chev"></i></span
+            ><span class="chip">Availability<i data-i="chev"></i></span
+            ><span class="chip">Service Area<i data-i="chev"></i></span>
+          </div>
+          <div class="lst">
+            <div class="card">
+              <div class="ph" style="width: 118px; height: 128px"></div>
+              <div class="ci">
+                <div class="r sp">
+                  <b style="font-size: 12.5px">Annwin George</b
+                  ><i data-i="bm" style="font-size: 13px"></i>
+                </div>
+                <span class="mu">Candid • Natural</span><span>★ 4.8 (312)</span
+                ><span class="r"><i data-i="pin"></i>Fort Kochi +1</span
+                ><span class="chip">Available</span>
+                <div class="btn">View profile</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ph" style="width: 118px; height: 128px"></div>
+              <div class="ci">
+                <div class="r sp">
+                  <b style="font-size: 12.5px">Aswin NDR</b
+                  ><i data-i="bm" style="font-size: 13px"></i>
+                </div>
+                <span class="mu">Aesthetic • Minimal</span
+                ><span>★ 4.7 (198)</span
+                ><span class="r"><i data-i="pin"></i>Mattancherry</span
+                ><span class="chip">Available</span>
+                <div class="btn">View profile</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="ph" style="width: 118px; height: 128px"></div>
+              <div class="ci">
+                <div class="r sp">
+                  <b style="font-size: 12.5px">Athul K.S</b
+                  ><i data-i="bm" style="font-size: 13px"></i>
+                </div>
+                <span class="mu">Cinematic • Moody</span><span>★ 4.9 (276)</span
+                ><span class="r"><i data-i="pin"></i>Marine Drive</span
+                ><span class="chip">Available</span>
+                <div class="btn">View profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="nav" data-nav="0"></div>
+        </section>
+
+        <!-- 3. PHOTOGRAPHER PROFILE -->
+        <section class="phone" id="profile" data-t="3. Photographer Profile">
+          <div class="st">
+            <span>9:41</span><svg class="sb"><use href="#sb" /></svg>
+          </div>
+          <div class="pad r sp" style="margin-top: 16px; font-size: 20px">
+            <i data-i="back"></i
+            ><span class="r" style="gap: 14px"
+              ><i data-i="bm"></i><i data-i="share"></i
+            ></span>
+          </div>
+          <div class="pad" style="margin-top: 10px">
+            <div class="ph" style="height: 126px"></div>
+            <div class="r" style="gap: 7px; margin-top: 6px">
+              <div class="ph" style="flex: 1; height: 62px"></div>
+              <div class="ph" style="flex: 1; height: 62px"></div>
+              <div class="ph" style="flex: 1; height: 62px"></div>
+            </div>
+            <div class="r sp" style="margin-top: 14px">
+              <b style="font-size: 19px">Annwin George</b
+              ><span>★ 4.8 (312)</span>
+            </div>
+            <p style="margin: 4px 0 0; font-size: 11.5px; line-height: 1.35">
+              Capturing real moments, naturally. I focus on candid and aesthetic
+              photography.
+            </p>
+            <div class="r" style="gap: 6px; margin-top: 9px">
+              <span class="chip">Candid</span><span class="chip">Natural</span
+              ><span class="chip">Lifestyle</span
+              ><span class="chip">Portrait</span>
+            </div>
+            <div class="r" style="margin-top: 10px; font-size: 11px">
+              <i data-i="pin"></i>Fort Kochi, Mattancherry
+            </div>
+          </div>
+          <div class="tabs" style="margin: 14px 20px 0">
+            <span class="on">Portfolio</span><span>Packages</span
+            ><span>Reviews</span>
+          </div>
+          <div class="pad r" style="margin-top: 14px; gap: 8px">
+            <div class="du">30 min</div>
+            <div class="du on">60 min<small>Recommended</small></div>
+            <div class="du">90 min</div>
+          </div>
+          <div class="pad" style="margin-top: 12px">
+            <div class="btn d" style="height: 40px; font-size: 13px">
+              Check availability
+            </div>
+          </div>
+          <div class="f"></div>
+          <div class="hb"></div>
+        </section>
+
+        <!-- 4. BOOKING REQUEST -->
+        <section class="phone" id="booking" data-t="4. Booking Request">
+          <div class="st">
+            <span>9:41</span><svg class="sb"><use href="#sb" /></svg>
+          </div>
+          <div
+            class="r"
+            style="
+              margin-top: 14px;
+              padding: 0 20px 12px;
+              border-bottom: 1px solid #e3e3e3;
+              position: relative;
+              justify-content: center;
+              font-size: 14px;
+              font-weight: 600;
+            "
+          >
+            <i
+              data-i="back"
+              style="position: absolute; left: 20px; font-size: 20px"
+            ></i
+            >Book a Session
+          </div>
+          <div class="pad r" style="margin-top: 10px; gap: 10px">
+            <div class="ph" style="width: 78px; height: 56px"></div>
+            <div class="ci" style="font-size: 10.5px; gap: 3px">
+              <b style="font-size: 13.5px">Annwin George</b
+              ><span class="mu">Candid • Natural</span><span>★ 4.8 (312)</span>
+            </div>
+          </div>
+          <div class="pad">
+            <div class="lb">Occasion</div>
+            <div class="r" style="gap: 6px">
+              <span class="chip on">Friends</span
+              ><span class="chip o">Couple</span><span class="chip o">Solo</span
+              ><span class="chip o">Celebration</span
+              ><span class="chip o">Creator</span>
+            </div>
+            <div class="lb">Service Area</div>
+            <div class="r" style="gap: 6px">
+              <span class="chip on">Fort Kochi</span
+              ><span class="chip o">Mattancherry</span
+              ><span class="chip o">Marine Drive</span>
+            </div>
+            <div class="r" style="gap: 14px; align-items: flex-start">
+              <div style="flex: 1.15">
+                <div class="lb">Date</div>
+                <div class="fd">
+                  <i data-i="cal" style="font-size: 14px"></i>Sat, Nov 22, 2026
+                </div>
+              </div>
+              <div style="flex: 1">
+                <div class="lb">Time</div>
+                <div class="fd">
+                  <i data-i="clock" style="font-size: 14px"></i>5:00 PM<i
+                    data-i="chev"
+                    style="margin-left: auto"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="lb">Duration</div>
+            <div class="r" style="gap: 8px">
+              <div class="du" style="height: 38px">30 min</div>
+              <div class="du on" style="height: 38px">
+                60 min<small>Recommended</small>
+              </div>
+              <div class="du" style="height: 38px">90 min</div>
+            </div>
+            <div class="lb">Add a note (optional)</div>
+            <div class="fd mu" style="height: 30px">
+              e.g. special request, group size…
+            </div>
+            <div
+              style="
+                background: #f0f0f0;
+                border-radius: 8px;
+                padding: 9px 11px;
+                margin-top: 12px;
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+              "
+            >
+              <div class="r sp">
+                <span>Session Duration</span><span>60 min</span>
+              </div>
+              <div class="r sp">
+                <span>Location</span><span>Fort Kochi</span>
+              </div>
+            </div>
+            <div
+              class="btn d"
+              style="height: 38px; margin-top: 12px; font-size: 12px"
+            >
+              Send booking request
+            </div>
+            <p style="text-align: center; font-size: 8.5px; margin: 6px 0 0">
+              Your booking is confirmed after the photographer accepts.
+            </p>
+          </div>
+          <div class="f"></div>
+          <div class="hb"></div>
+        </section>
+
+        <!-- 5. BOOKINGS / STATUS -->
+        <section class="phone" id="bookings" data-t="5. Bookings / Status">
+          <div class="st">
+            <span>9:41</span><svg class="sb"><use href="#sb" /></svg>
+          </div>
+          <div class="pad" style="margin-top: 20px">
+            <span class="ti" style="font-size: 19px">My Bookings</span>
+          </div>
+          <div class="card" style="margin: 14px 14px 0; padding: 12px">
+            <div class="r" style="gap: 10px; align-items: flex-start">
+              <div class="ph" style="width: 74px; height: 84px"></div>
+              <div
+                class="ci"
+                style="font-size: 11px; gap: 8px; padding-top: 4px"
+              >
+                <b style="font-size: 12.5px">Annwin George</b
+                ><span class="r"><i data-i="cal"></i>Sat, Nov 22 • 5:00 PM</span
+                ><span class="r"><i data-i="pin"></i>Fort Kochi</span
+                ><span class="r"><i data-i="clock"></i>60 min</span>
+              </div>
+            </div>
+            <div
+              class="btn"
+              style="
+                height: 28px;
+                margin-top: 10px;
+                font-size: 10px;
+                font-weight: 500;
+              "
+            >
+              <i data-i="clock" style="font-size: 12px"></i>Awaiting
+              photographer confirmation
+            </div>
+            <div class="stp">
+              <div><b class="k">1</b>Request<br />sent</div>
+              <div><b>2</b>Photographer<br />responds</div>
+              <div><b>3</b>Booking<br />confirmed</div>
+            </div>
+            <div class="r" style="gap: 10px; margin-top: 14px">
+              <div class="btn l" style="flex: 1">Message</div>
+              <div class="btn l" style="flex: 1">Cancel request</div>
+            </div>
+          </div>
+          <div class="pad" style="margin-top: 18px">
+            <b style="font-size: 11.5px">Past Bookings</b>
+          </div>
+          <div class="card r" style="margin: 6px 14px 0; gap: 8px">
+            <div class="ph" style="width: 52px; height: 52px"></div>
+            <div class="ci" style="gap: 5px">
+              <b style="font-size: 10px">Amal Vishnu</b
+              ><span>Aug 14, 2025 • 4:00 PM</span
+              ><span class="r"><i data-i="pin"></i>Marine Drive</span>
+            </div>
+            <div class="ci" style="flex: none; gap: 6px">
+              <div
+                class="btn"
+                style="
+                  height: 22px;
+                  font-size: 9px;
+                  padding: 0 10px;
+                  font-weight: 500;
+                "
+              >
+                View photos
+              </div>
+              <div
+                class="btn"
+                style="
+                  height: 22px;
+                  font-size: 9px;
+                  padding: 0 10px;
+                  font-weight: 500;
+                "
+              >
+                Book again
+              </div>
+            </div>
+          </div>
+          <div class="f"></div>
+          <div class="nav" data-nav="1"></div>
+        </section>
+
+        <!-- 6. PHOTOGRAPHER DASHBOARD -->
+        <section
+          class="phone"
+          id="dashboard"
+          data-t="6. Photographer Dashboard"
+        >
+          <div class="st">
+            <span>9:41</span><svg class="sb"><use href="#sb" /></svg>
+          </div>
+          <div class="pad r sp" style="margin-top: 20px">
+            <span class="ti" style="font-size: 20px">Dashboard</span
+            ><span class="r" style="gap: 8px; font-size: 12px"
+              >Available<span class="tg"></span
+            ></span>
+          </div>
+          <div class="tabs" style="margin: 12px 14px 0">
+            <span class="on">Requests</span><span>Schedule</span
+            ><span>Portfolio</span><span>Profile</span>
+          </div>
+          <div
+            class="card"
+            style="margin: 14px 14px 0; padding: 12px; background: #fafafa"
+          >
+            <div class="r sp">
+              <span style="font-size: 11.5px">New Booking Request</span
+              ><span
+                style="
+                  width: 7px;
+                  height: 7px;
+                  border-radius: 50%;
+                  background: #444;
+                "
+              ></span>
+            </div>
+            <div
+              class="r"
+              style="gap: 10px; margin-top: 10px; align-items: flex-start"
+            >
+              <div class="ph" style="width: 76px; height: 76px"></div>
+              <div class="ci" style="font-size: 11px; gap: 7px">
+                <b style="font-size: 13px">Amal Vishnu</b
+                ><span class="r"><i data-i="cal"></i>Sat, Nov 22 • 5:00 PM</span
+                ><span class="r"><i data-i="pin"></i>Marine Drive</span
+                ><span class="r"><i data-i="clock"></i>60 min • Friends</span>
+              </div>
+            </div>
+            <div
+              class="r"
+              style="
+                margin-top: 10px;
+                height: 30px;
+                border-radius: 8px;
+                background: #e6e6e6;
+                padding: 0 10px;
+                font-size: 10px;
+                gap: 8px;
+              "
+            >
+              <i data-i="msg" style="font-size: 13px"></i>“Would love some
+              candid shots!”
+            </div>
+            <div class="r" style="gap: 10px; margin-top: 12px">
+              <div class="btn d" style="flex: 1">Accept</div>
+              <div class="btn l" style="flex: 1">Decline</div>
+            </div>
+          </div>
+          <div class="pad" style="margin-top: 16px">
+            <b style="font-size: 14px">Upcoming Bookings</b>
+          </div>
+          <div
+            class="card r"
+            style="margin: 8px 14px 0; gap: 10px; padding: 8px"
+          >
+            <div class="ph" style="width: 56px; height: 56px"></div>
+            <div class="ci" style="font-size: 10px; gap: 5px">
+              <b style="font-size: 11px">Annwin George</b
+              ><span class="r"><i data-i="cal"></i>Sun, Nov 23 • 6:00 PM</span
+              ><span class="r"><i data-i="pin"></i>Fort Kochi • 60 min</span>
+            </div>
+            <i data-i="next" style="font-size: 15px"></i>
+          </div>
+          <div class="f"></div>
+          <div class="hb"></div>
+        </section>
+      </div>
+    </div>
+
+    <div class="bar">
+      <button onclick="nav(n-1)" aria-label="Previous screen">‹</button>
+      <div id="d"></div>
+      <span id="c"></span
+      ><button onclick="nav(n+1)" aria-label="Next screen">›</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
